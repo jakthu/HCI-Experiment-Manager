@@ -34,26 +34,26 @@
       <div id="content">
         <!-- insert the page content here -->
         <h1>Ongoing Experiments:</h1>
-		<h2>Experiment 1</h2>
+		<h2>Experiment 1 - Andrew</h2>
         <table style="width:100%">
 		  <tr>
 			<th>Firstname</th>
 			<th>Lastname</th> 
-			<th>Age</th>
+			<th>Status</th>
 		  </tr>
 		  <tr>
 			<td>Jill</td>
 			<td>Smith</td> 
-			<td>50</td>
+			<td>Approved</td>
 		  </tr>
 		  <tr>
 			<td>Eve</td>
 			<td>Jackson</td> 
-			<td>94</td>
+			<td>Pending approval</td>
 		  </tr>
 		</table>
 		<input type="button" value="Delete experiment" style="float: right;">
-		<h2>Experiment 2</h2>
+		<h2>Experiment 2 - Jillian</h2>
 		<table style="width:100%">
 		  <tr>
 			<th>Firstname</th>
@@ -84,6 +84,34 @@
 				Add experiment
 			</button>
 		</div>
+		
+		  <head>
+			<title>formDemo.html</title>
+			<meta charset = "UTF-8" />
+		  </head>
+		  <body>
+			
+			<form>
+			   <fieldset>
+				  <legend>Choose Experimenter View</legend>
+				  <p>
+					 <label>Select view</label>
+					 <select id = "myList">
+					   <input type = "option" onclick="changeExperimenter" value = "1">Experimenter 1</option>
+					   <option value = "2">Experimenter 2</option>
+					 </select>
+				  </p>
+			   </fieldset>
+			</form>
+			  <script language="javascript">
+	function changeExperimenter(form)
+	{
+
+		window.open("contact.html")
+
+	}
+  </script>
+		  </body>
       </div>
     </div>
 
