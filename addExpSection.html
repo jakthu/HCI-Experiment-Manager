@@ -17,15 +17,11 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <a href="home.html"><img src="logoEXwhite.png"></a>
+          <a href="dharaHomepage.html"><img src="logoEXwhite.png"></a>
         </div>
 	
 	<div id="logo_text" style="position:absolute; left:660px;">
 		<p style="color:#69acd7">Welcome, Experimenter</p>
-	</div>
-
-	<div id="logo_text" style="position:absolute; left:820px;">
-		<a href="logout.html"><p style="color:#69acd7">Logout</p></a>
 	</div>
       </div>
 	  <div>
@@ -38,11 +34,11 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <!--<li><a href="examples.html">Calendars</a></li>-->
-		  <li class="selected"><a href="home.html">Experiments</a></li>
+		  <li class="selected"><a href="cohorts.html">Experiments</a></li>
 		  <li><a>Add Experiment</a></li>
 		  <li><a>Email Responses</a></li>
 		  <li><a>Settings</a></li>
-		  <li><a>Sign Out</a></li>
+		  <li><<a href="logout.html">Sign Out</a></li>
 		  
         </ul>
       </div>
@@ -79,8 +75,8 @@
 			</p> 
 			 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
 			 <!--<select id = "myList">-->
-				<option value = "#">select amount</option>
-			   <option>1</option>
+				<!--<option value = "#">select amount</option>-->
+			   <option value = "#">1</option>
 			   <option>2</option>
 			   <option>3</option>
 			   <option>4</option>
@@ -113,9 +109,13 @@
 		<input type="button" value="Add test" style="float: left;">
 		<p>
 		</p>
-		<input type="button" value="Submit" style="float: right;">
+		<input type="button" onclick="openExpAdded()" value="Submit" style="float: right;">
 		
-		
+		<script>
+			function openExpAdded(){
+				window.open("expAdded.html",'_self')
+			}
+		</script>
 		
 		
 		  <head>

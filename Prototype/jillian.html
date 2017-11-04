@@ -15,23 +15,23 @@
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <a href="dharaHomepage.html"><img src="logoEXwhite.png"></a>
+          <a href="participant.html"><img src="logocolor.png"></a>
         </div>
 	
 	<div id="logo_text" style="position:absolute; left:660px;">
 		<p style="color:#69acd7">Welcome, Experimenter</p>
 	</div>
 
+	<div id="logo_text" style="position:absolute; left:820px;">
+		<a href="logout.html"><p style="color:#69acd7">Logout</p></a>
+	</div>
       </div>
-      <div id="menubar" style="position:absolute; top:170px;">
+      <div id="menubar">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li class="selected"><a href="home.html">Experiments</a></li>
           <!--<li><a href="examples.html">Calendars</a></li>-->
-		  <li class="selected"><a href="cohorts.html">Experiments</a></li>
-		  <li><a>Add Experiment</a></li>
-		  <li><a>Email Responses</a></li>
-		  <li><a>Settings</a></li>
-		  <li><<a href="logout.html">Sign Out</a></li>
+		  <li><a>Add survey</a></li>
 		  
         </ul>
       </div>
@@ -80,19 +80,12 @@
 		  </tr>
 		</table>
 		
-		<input type="button" onclick="openDeleteExp()" value="Delete experiment" style="float: right;">
+		<input type="button" value="Delete experiment" style="float: right;">
 		
 		<div>
-			<input type="button" onclick="openAddExp()" value="Add experiment" style="float: left;">
+			<input type="button" value="Add experiment" style="float: left;">
 		</div>
-		<script>
-			function openAddExp(){
-				window.open("addExperiment.html",'_self')
-			}
-			function openDeleteExp(){
-				window.open("deletedExpUser2.html",'_self')
-			}
-		</script>
+		
 		  <head>
 			<title>formDemo.html</title>
 			<meta charset = "UTF-8" />

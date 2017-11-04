@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Experiment Manager Title</title>
+  <title>Experiment Manager for Participants</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -10,72 +10,78 @@
 </head>
 
 <body>
-	
-
   <div id="main">
     <div id="header">
       <div id="logo">
         <div id="logo_text">
           <!-- class="logo_colour", allows you to change the colour of the text -->
-          <a href="dharaHomepage.html"><img src="logoEXwhite.png"></a>
-        </div>
-	
+          <a href="participantStart.html"><img src="logoEXwhite.png"></a>
+	</div>
+
 	<div id="logo_text" style="position:absolute; left:660px;">
-		<p style="color:#69acd7">Welcome, Experimenter</p>
+		<p style="color:#69acd7">Welcome, Participant</p>
 	</div>
 
       </div>
-	  <div>
-	  <p>
-	  </p>
-	  <p>
-	  </p>
-	  </div>
       <div id="menubar" style="position:absolute; top:170px;">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <!--<li><a href="examples.html">Calendars</a></li>-->
-		  <li class="selected"><a href="cohorts.html">Experiments</a></li>
-		  <li><a>Add Experiment</a></li>
-		  <li><a>Email Responses</a></li>
+		  <li class="selected"><a href="opportunityBoard.html">Opportunity Board</a></li>
+		  <li><a>Your Schedule</a></li>
 		  <li><a>Settings</a></li>
 		  <li><<a href="logout.html">Sign Out</a></li>
 		  
         </ul>
       </div>
     </div>
-	
-	<p>
-	
-	
-	
-	
-	</p>
-	
     <div id="content_header"></div>
     <div id="site_content">
       
       <div id="content">
         <!-- insert the page content here -->
-        <h1>Welcome to UTDExm</h1>
-		<!--
-		<div>
-			<img src="user1exp.png" alt="user1 image">
-			<img src="user2exp.png" alt="user2 image" style="float: right;">
-			<p>
-			</p>
-			<input type="button" value="User1 experiments">
-			
-			
-			<input type="button" value="User2 experiments" style="float: right;">
-		</div>
-		-->
-		<p>
-		</p>
-		<div>
-			
+        <h1>Click on the title of an experiment you would like to sign up for</h1>
+		
+	  <div class="sidebar">
+
+			<!-- insert your sidebar items here -->
+			  <p>
+				 <!--
+				 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
+				 <select id = "myList">
+					<option value = "#">Select Current/Available Experiments</option>
+				   <option value = "participant.html">Current Experiments</option>
+				 input type = "option" onclick="changeExperimenter"
+				   <option value = "availableExp.html">Available Experiments</option>
+				 </select>
+				 -->
+			  </p>
 		</div>
 		
+
+		<table style="width:100%">
+		  <tr>
+			<th>Title</th>
+			<th>Description</th> 
+			<th>Lab</th>
+			<th>Date</th>
+			<th>Time</th>
+		  </tr>
+		  <tr>
+			<td>Generic experiment 1</td>
+			<td>Generic description</td> 
+			<td>Andrew</td>
+			<td>11/12/17</td>
+			<td>1:00 PM</td>
+		  </tr>
+		  <tr>
+			<td>Generic experiment 2</td>
+			<td>Generic description</td> 
+			<td>Jillian</td>
+			<td>11/13/17</td>
+			<td>2:00 PM</td>
+		  </tr>
+		</table>
 		
 		  <head>
 			<title>formDemo.html</title>
