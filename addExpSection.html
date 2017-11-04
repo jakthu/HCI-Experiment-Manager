@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Experiment Manager Title</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <a href="home.html"><img src="logoEXwhite.png"></a>
+        </div>
+	
+	<div id="logo_text" style="position:absolute; left:660px;">
+		<p style="color:#69acd7">Welcome, Experimenter</p>
+	</div>
+
+	<div id="logo_text" style="position:absolute; left:820px;">
+		<a href="logout.html"><p style="color:#69acd7">Logout</p></a>
+	</div>
+      </div>
+	  <div>
+	  <p>
+	  </p>
+	  <p>
+	  </p>
+	  </div>
+      <div id="menubar" style="position:absolute; top:170px;">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <!--<li><a href="examples.html">Calendars</a></li>-->
+		  <li class="selected"><a href="home.html">Experiments</a></li>
+		  <li><a>Add Experiment</a></li>
+		  <li><a>Email Responses</a></li>
+		  <li><a>Settings</a></li>
+		  <li><a>Sign Out</a></li>
+		  
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      
+      <div id="content">
+		
+		<p>
+		</p>
+		
+		<input type="text" value="Experiment Title">
+		
+		<!--
+		<div>
+			<img src="user1exp.png" alt="user1 image">
+			<img src="user2exp.png" alt="user2 image" style="float: right;">
+			<p>
+			</p>
+			<input type="button" value="User1 experiments">
+			
+			
+			<input type="button" value="User2 experiments" style="float: right;">
+		</div>
+		<p>
+		</p>
+		-->
+		<div>
+			<p>
+			</p>
+			Number of sections:
+			<p>
+			</p> 
+			 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
+			 <!--<select id = "myList">-->
+				<option value = "#">select amount</option>
+			   <option>1</option>
+			   <option>2</option>
+			   <option>3</option>
+			   <option>4</option>
+			   <option>5</option>
+			   <option>6</option>
+			 </select>
+			 <p>
+			</p>
+		</div>
+		
+		<input type="text" value="Name of section 1">
+		<p>
+		</p>
+		<input type="text" value="Date of section 1 (xx/xx/xx)">
+		<p>
+		</p>
+		<input type="text" value="Time of section 1 (xx:xx AM/PM)">
+		<p>
+		</p>
+		<div>
+			Description
+			<p>
+			</p>
+			<textarea rows="4" cols="50">
+			</textarea>
+		</div>
+		<input type="button" value="Add files" style="float: left;">
+		<p>
+		</p>
+		<input type="button" value="Add test" style="float: left;">
+		<p>
+		</p>
+		<input type="button" value="Submit" style="float: right;">
+		
+		
+		
+		
+		  <head>
+			<title>formDemo.html</title>
+			<meta charset = "UTF-8" />
+		  </head>
+		  <body>
+			
+			
+	<!--
+			  <script language="javascript">
+	  
+	function changeExperimenter(select)
+	{
+		
+		if(form == "/contact.html")
+			window.open("contact.html",'_self') <!-- _self makes it open in same window instead of opening new window
+		
+		window.location = select.value;
+	}
+  </script>
+  -->
+	
+		  </body>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+</html>
