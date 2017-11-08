@@ -23,9 +23,9 @@
       <p class="message">Already registered? <a href="#">Sign In</a></p>
     </form>
     <form class="login-form">
-      <input type="text" placeholder="username" name="userid"/>
-      <input type="password" placeholder="password" name="pswrd"/>
-      <input type="button" onclick="check(this.form)" value="login"/>
+      <input type="text" onkeydown="if (event.keyCode==13) document.getElementById('loginBtn').click()" placeholder="username" name="userid"/>
+      <input type="password" onkeydown="if (event.keyCode==13) document.getElementById('loginBtn').click()" placeholder="password" name="pswrd"/>
+      <input type="button" id="loginBtn" onclick="check(this.form)" value="login"/>
       <p class="message">Not registered? <a href="#">Create an account</a></p>
     </form>
   </div>
