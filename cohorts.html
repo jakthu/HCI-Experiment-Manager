@@ -35,7 +35,7 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <!--<li><a href="examples.html">Calendars</a></li>-->
-		  <li class="selected"><a href="cohorts.html">Experiments</a></li>
+		  <li><a href="cohorts.html">Experiments</a></li>
 		  <li><a>Email Responses</a></li>
 		  <li><a>Settings</a></li>
 		  <li><<a href="logout.html">Sign Out</a></li>
@@ -51,8 +51,8 @@
         <h1>Go to...</h1>
 		
 		<div>
-			<img src="user1exp.png" alt="user1 image">
-			<img src="user2exp.png" alt="user2 image" style="float: right;">
+			<img src="user1exp.png" onclick="openUser1Exps()" alt="user1 image">
+			<img src="user2exp.png" onclick="openUser2Exps()" alt="user2 image" style="float: right;">
 			<p>
 			</p>
 			<input type="button" onclick="openUser1Exps()" value="User1 experiments">
