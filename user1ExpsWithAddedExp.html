@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Experiment Manager Title</title>
+  <title>Experiment Manager</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -23,13 +23,8 @@
 	<div id="logo_text" style="position:absolute; left:660px;">
 		<p style="color:#69acd7">Welcome, Experimenter</p>
 	</div>
+
       </div>
-	  <div>
-	  <p>
-	  </p>
-	  <p>
-	  </p>
-	  </div>
       <div id="menubar" style="position:absolute; top:170px;">
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
@@ -46,88 +41,89 @@
     <div id="site_content">
       
       <div id="content">
+        <!-- insert the page content here -->
+        <h1>User 1's Experiments</h1>
 		
-		<p>
-		</p>
-		
-		<input type="text" size="40" value="Experiment Title">
-		
-		<!--
-		<div>
-			<img src="user1exp.png" alt="user1 image">
-			<img src="user2exp.png" alt="user2 image" style="float: right;">
-			<p>
-			</p>
-			<input type="button" value="User1 experiments">
-			
-			
-			<input type="button" value="User2 experiments" style="float: right;">
-		</div>
-		<p>
-		</p>
-		-->
-		<div>
-			<p>
-			</p>
-			Number of sections:
-			<p>
-			</p> 
-			 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
-			 <!--<select id = "myList">-->
-				<!--<option value = "#">select amount</option>-->
-			   <option value = "#">1</option>
-			   <option>2</option>
-			   <option>3</option>
-			   <option>4</option>
-			   <option>5</option>
-			   <option>6</option>
-			 </select>
-			 <p>
-			</p>
+	  <div class="sidebar">
+		  <div class="sidebar_top"></div>
+		  <div class="sidebar_item">
+			<!-- insert your sidebar items here -->
+			  <p>
+				 
+				 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
+				 <!--<select id = "myList">-->
+					<option value = "#">Select Experimenter/Cohort</option>
+				   <option value = "home.html">Andrew</option>
+				   <!-- input type = "option" onclick="changeExperimenter"  -->
+				   <option value = "jillian.html">Jillian</option>
+				 </select>
+			  </p>
+		  </div>
+		  <div class="sidebar_base"></div>
 		</div>
 		
-		<input type="text" size="30" value="Name of section 1">
-		<p>
-		</p>
-		<input type="text" size="30" value="Date of section 1 (xx/xx/xx)">
-		<p>
-		</p>
-		<input type="text" size="30" value="Time of section 1 (xx:xx AM/PM)">
-		<p>
-		</p>
-		<div>
-			Description
-			<p>
-			</p>
-			<textarea rows="6" cols="80">
-			</textarea>
-		</div>
 		<p></p>
-		<input type="button" onclick="addFile()" value="Add files" style="float: left;">
-		<p>
 		<p></p>
+		<p></p>
+		<h2>Experiment 1</h2>
+        <table style="width:100%">
+		  <tr>
+			<th>Firstname</th>
+			<th>Lastname</th> 
+			<th>Status</th>
+		  </tr>
+		  <tr>
+			<td>Jill</td>
+			<td>Smith</td> 
+			<td>Approved</td>
+		  </tr>
+		  <tr>
+			<td>Eve</td>
+			<td>Jackson</td> 
+			<td>Pending approval</td>
+		  </tr>
+		</table>
+		
+		<input type="button" value="Edit experiment" style="float: right;">
+
+		<p></p>
+		<p></p>
+		<p></p>
+		<h2>Experiment 2</h2>
+		<table style="width:100%">
+		  <tr>
+			<th>Firstname</th>
+			<th>Lastname</th> 
+			<th>Status</th>
+		  </tr>
+		  <tr>
+			<td height="10"></td>
+			<td></td> 
+			<td></td>
+		  </tr>
+			<tr>
+				<td height="10"></td>
+				<td></td> 
+				<td></td>
+			</tr>
+		</table>
+		<!--
+		<input type="button" onclick="openDeleteExp()" value="Delete experiment" style="float: right;">
+		-->
+		<input type="button" value="Edit experiment" style="float: right;">
+		<p>
 		</p>
 		<div>
-			<input type="text" size="70" value="Enter link to qualtrics test (optional)">
-		</div>	
-		<!--
-		<input type="button" value="Add test" style="float: left;">
-		-->
-		<p>
-		<p>
-		</p>
-		<input type="button" onclick="openExpAdded()" value="Submit" style="float: right;">
-		
+			<input type="button" onclick="openAddExp()" value="Add experiment" style="float: left;">
+		</div>
 		<script>
-			function openExpAdded(){
-				window.open("expAdded.html",'_self')
+			function openAddExp(){
+				window.open("addExperiment.html",'_self')
 			}
-			function addFile(){
-				window.open("addExpSectionWithFileAdded.html",'_self')
+			function openDeleteExp(){
+				window.open("deletedExpUser1.html",'_self')
 			}
 		</script>
-		
-		
 		  <head>
 			<title>formDemo.html</title>
 			<meta charset = "UTF-8" />
