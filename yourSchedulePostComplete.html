@@ -27,8 +27,8 @@
         <ul id="menu">
           <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
           <!--<li><a href="examples.html">Calendars</a></li>-->
-		  <li><a href="opportunityBoard.html">Opportunity Board &#10071</a></li>
-		  <li><a>Your Schedule &#10071</a></li>
+		  <li class="selected"><a href="opportunityBoard.html">Opportunity Board</a></li>
+		  <li><a>Your Schedule</a></li>
 		  <li><a>Settings</a></li>
 		  <li><<a href="logout.html">Sign Out</a></li>
 		  
@@ -40,33 +40,47 @@
       
       <div id="content">
         <!-- insert the page content here -->
-		
-	  <div class="sidebar">
+		<h1>Upcoming Experiments</h1>
+        <p>"Generic experiment 1" has been added to the upcoming experiments list</p>
+		<table style="width:100%">
+		  <tr>
+			<th>Title</th>
+			<th>Description</th> 
+			<th>Lab</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Action</th>
+		  </tr>
+		  <tr>
+			<td>Generic experiment 1<a/> </td>
+			<td>Generic description</td> 
+			<td>Andrew</td>
+			<td>11/12/17</td>
+			<td>1:00 PM</td>
+			<td><a>Cancel</a><td>
+		  </tr>
+		</table>
+		<p></p>
+		<h1>In-progress Submissions</h1>
 
-			<!-- insert your sidebar items here -->
-			  <p>
-				 <!--
-				 <select name="menu" onchange="location = this.options[this.selectedIndex].value;">
-				 <select id = "myList">
-					<option value = "#">Select Current/Available Experiments</option>
-				   <option value = "participant.html">Current Experiments</option>
-				 input type = "option" onclick="changeExperimenter"
-				   <option value = "availableExp.html">Available Experiments</option>
-				 </select>
-				 -->
-			  </p>
-		</div>
-		
-		<img src="participantHomePage.png" alt="participantHomePage.png image">
-
-		<div>
-			<p>
-			
-			
-			</p>
-			<p> </p>
-
-		</div>
+		<table style="width:100%">
+		  <tr>
+			<th>Title</th>
+			<th>Description</th> 
+			<th>Lab</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>Action</th>
+		  </tr>
+		  <tr>
+			<td>Generic experiment 2</td>
+			<td>Generic description</td> 
+			<td>Jillian</td>
+			<td>11/13/17</td>
+			<td>2:00 PM</td>
+			<td></td>
+		  </tr>
+		</table>
 		
 		  <head>
 			<title>formDemo.html</title>
